@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="head">
+            <div class="head_wrap-left">
+                <div><b id="head_name">Гоблин чёрный клинок</b></div>
+                <div id="head_race">Маленький природный гуманоид</div>
+            </div>
+            <div class="head_wrap-right">
+                <div class="head_profession"><b>Соглядатай <span id="head_profession_lvl-count">1</span> уровня</b></div>
+                <div class="head_level">Опыт <span id="head_level_lvl-count">100</span></div>
+            </div>
+        </div>
+        <div class="stats-first">
+            <div class="stats-first_line-one">
+                <span class="stats-first_initiative"><b>Инициатива</b> <span id="stats-first_initiative-sign">+</span><span id="stats-first_initiative-count">7</span></span>
+                <span class="stats-first_feelings"><b>Чувства</b> <span id="stats-first_feelings-first">Внимательность <span id="stats-first_feelings-first-sign">+</span><span id="stats-first_feelings-first-count">1</span></span>; <span id="stats-first_feelings-second">сумеречное зрение</span></span>
+            </div>
+            <div class="stats-first_HP">
+                <span class="stats-first_HP-hits"><b>Хиты</b> <span id="stats-first_HP-hits-count">25</span>;</span>
+                <span class="stats-first_HP-damage"><b>Ранен</b> <span id="stats-first_HP-damage-count">12</span></span>
+            </div>
+            <div class="stats-first_line-three">
+                <span class="stats-first_line-three-KD"><b>КД</b> <span id="stats-first_line-three-KD-count">16</span>; </span>
+                <span class="stats-first_line-three-tenacity"><b>Стойкость</b> <span id="stats-first_line-three-tenacity-count">12</span>,</span>
+                <span class="stats-first_line-three-reaction"><b>Реакция</b> <span id="stats-first_line-three-reaction-count">14</span>,</span>
+                <span class="stats-first_line-three-will"><b>Воля</b> <span id="stats-first_line-three-will-count">11</span></span>
+            </div>
+            <div class="stats-first_speed">
+                <b>Скорость</b> <span id="stats-first_speed-count">6</span>; <span class="stats-first_speed-extra-info">смотрите также <em class="stats-first_speed-extra-info-value">тактика гоблинов</em></span></span>
+            </div>
+        </div>
+        <div class="weapon">
+            <img class="weapon_img" src="./PinClipart.com_earth-clipart-free_1520216.png" alt="sword" width="20" height="20">
+            <span><b id="weapon_name">Короткий меч</b> <span id="weapon_parameters">(стандартное; неограниченный)</span> &#10022; <b id="weapon_type">Оружие</b></span>
+        </div>
+        <div class="weapon-dd">
+            <span class="weapon-dd_enemy-weak"><span id="weapon-dd_enemy-weak_sign">+</span><span id="weapon-dd_enemy-weak_count">5</span> <span id="weapon-dd_enemy-weak-against">против КД</span></span>; <span class="weapon-dd_damage">урон <span id="weapon-dd_damage-dice-type">1d6</span> <span class="weapon-dd_damage-dice-mod"><span id="weapon-dd_damage-dice-mod-sign">+</span> <span id="weapon-dd_damage-dice-mod-count">2</span></span></span>
+        </div>
+        <div class="passive-ability-first">
+            <b>Боевое превосходство</b>
+        </div>
+        <div class="passive-ability-first-description">
+            Гоблин чёрный клинок причиняет дополнительно 1d6 урона цели, над которой у него есть боевое превосходство.
+        </div>
+        <div class="passive-ability-second">
+            <b class="passive-ability-second_name">Тактика гоблинов</b> &#32; <span class="passive-ability-second_text">(немедленный ответ, когда по нему промахнулись рукопашной атакой; неограниченный)</span>
+        </div>
+        <div class="passive-ability-second-description">Гоблин совершает шаг на 1 клетку.</div>
+        <div class="passive-ability-third"><b class="passive-ability-third_name">Хитрость</b></div>
+        <div class="passive-ability-third-description">Когда гоблин чёрный клинок совершает шаг, он может войти в
+            пространство, занимаемое союзником его уровня или ниже. Союзник
+            совершает шаг в занимаемое ранее чёрным клинком пространство
+            свободным действием.</div>
+        <div class="stats-second">
+            <div class="stats-second_group1">
+                <span class="stats-second_group1-ideology"><b class="stats-second_group1-ideology-name">Мировоззрение</b> <span id="stats-second_group1-ideology-type">Злое</span></span>
+                <span class="stats-second_group1-languages"><b class="stats-second_group1-languages-name">Языки</b> <span id="stats-second_group1-languages-1">Гоблинский</span>, <span id="stats-second_group1-languages-2">Общий</span></span>
+            </div>
+            <div class="stats-second_skills">
+                <b class="stats-second_skills-name">Навыки</b> &#32; 
+                <span class="stats-second_skills-1"><span id="stats-second_skills-1-name">Воровство</span> <span id="stats-second_skills-1-sign">+</span><span id="stats-second_skills-1-value">10</span>,</span>
+                <span class="stats-second_skills-2"><span id="stats-second_skills-2-name">Скрытность</span> <span id="stats-second_skills-2-sign">+</span><span id="stats-second_skills-2-value">10</span></span>
+            </div>
+            <div class="stats-second_group3">
+                <div class="stats-second_group3-sub1">
+                    <span id="str"><b id="str-name">Сил</b> <span id="str-val">14</span> (<span id="str-mod-sign">+</span><span id="str-mod-count">2</span>)</span>
+                    <span id="con"><b id="con-name">Тел</b> <span id="con-val">13</span> (<span id="con-mod-sign">+</span><span id="con-mod-count">1</span>)</span>
+                </div>
+                <div class="stats-second_group3-sub2">
+                    <span id="agi"><b id="agi-name">Лов</b> <span id="agi-val">17</span> (<span id="agi-mod-sign">+</span><span id="agi-mod-count">3</span>)</span>
+                    <span id="int"><b id="int-name">Инт</b> <span id="int-val">8</span> (<span id="int-mod-sign">-</span><span id="int-mod-count">1</span>)</span>
+                </div>
+                <div class="stats-second_group3-sub3">
+                    <span id="mnd"><b id="mnd-name">Мдр</b> <span id="mnd-val">12</span> (<span id="mnd-mod-sign">+</span><span id="mnd-mod-count">1</span>)</span>
+                    <span id="chr"><b id="chr-name">Хар</b> <span id="chr-val">8</span> (<span id="chr-mod-sign">-</span><span id="chr-mod-count">1</span>)</span>
+                </div>
+            </div>
+        </div>
+        <div class="equipment">
+            <b class="equipment_name">Снаряжение</b> &#32; <span class="equipment_items"><span id="equipment_items-1">кожаный доспех</span>, <span id="equipment_items-2">короткий меч</span></span>
+        </div>
+    </main>
+</body>
+</html>
